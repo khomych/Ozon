@@ -2,7 +2,7 @@
 
 //checkbox
 const checkbox = document.querySelectorAll('.filter-check_checkbox');
-const cart = document.getElementById('cart');
+const btnCart = document.getElementById('cart');
 const cartModal = document.querySelector('.cart');
 
 checkbox.forEach((item) => {
@@ -15,8 +15,11 @@ checkbox.forEach((item) => {
     });
 });
 
+//end checkbox
 
-cart.addEventListener('click', () => {
+//корзина
+
+btnCart.addEventListener('click', () => {
     cartModal.style.display = 'flex';
 });
 
@@ -27,4 +30,4 @@ cartModal.addEventListener(('click'), (event) => {
         cartModal.style.display = 'none';
     }
 });
-//end checkbox
+//end корзина
